@@ -1,3 +1,4 @@
+![me](1.jpg)
 # Tetiana Dushenko
 _____
 29.07.1982
