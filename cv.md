@@ -53,3 +53,24 @@ _____
 * 2005 - 2006 KNURE, Engineering communication networks
 * 1999 - 2004 KTU, Urban construction and economy
 _____
+## **Code examples:**
+```javascript
+function curPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  console.log(lat, lon);
+  let apiKey = "5bd8dd5876af31be7dd1dd4666c7f2a5";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(timeDate);
+  console.log(apiUrl);
+
+  let cityName = response.data.name;
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = cityName;
+}
+navigator.geolocation.getCurrentPosition(curPosition);
+
+let curLoc = document.querySelector(".curLoc");
+curLoc.addEventListener("click", curPosition);     
+```
+_____
