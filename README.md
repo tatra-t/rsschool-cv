@@ -1,1 +1,1 @@
-https://tatra-t.github.io/rsschool-cv/cv
+https://tatra-t.github.io/rsschool-cv/
